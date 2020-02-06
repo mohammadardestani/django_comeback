@@ -1,7 +1,7 @@
 
 from django.http import HttpResponse
+from django.shortcuts import render 
 
 
 def home_page(request):
-    return HttpResponse(content="this is home page")
-    
+    return render(request,'home.html')
