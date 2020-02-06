@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from . import viwes
 urlpatterns = [
-    path( '',viwes.home_page),
+    path( '',viwes.home_page, name="home"),
     path('count/',viwes.count, name='count'),
+    path('about/',viwes.about, name='about'),
     path('admin/', admin.site.urls),
 ]
