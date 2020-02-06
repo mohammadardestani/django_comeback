@@ -18,5 +18,6 @@ from django.urls import path, include
 from . import viwes
 urlpatterns = [
     path( '',viwes.home_page),
+    path('count/',viwes.count, name='count'),
     path('admin/', admin.site.urls),
 ]
